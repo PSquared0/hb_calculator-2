@@ -19,3 +19,6 @@ while True:
 	elif tokens[0] == '-':
 		result = subtract(int(tokens[1]), int(tokens[2]))
 		print result
+	elif tokens[0] == '*':
+		result = multiply(int(tokens[1]), int(tokens[2]))
+		print result

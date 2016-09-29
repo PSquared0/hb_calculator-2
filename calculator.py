@@ -12,6 +12,7 @@ while True:
 	user_input = raw_input("Enter Math Function Here: ")
 	tokens = user_input.split(" ")
 	operator = tokens[0]
+	list_of_numbers = tokens[1:]
 	try:
 		if operator=='square' or operator=='cube':
 			num1 = int(tokens[1])
@@ -23,7 +24,7 @@ while True:
 		print "Sorry, wrong input. Please use q for quit; square, cube, pow, mod, or an operator before your numbers."
 		continue
 	if operator == '+':
-		result = add(num1, num2)
+		result = add(list_of_numbers)
 		print result
 	elif operator == '-':
 		result = subtract(num1, num2)

@@ -1,6 +1,9 @@
-def add(num1, num2):
-    """ Return sum of two intergers"""
-    return num1 + num2
+def add(list):
+    """ Return sum of multiple intergers"""
+    answer = 0
+    for item in range(len(list)):
+        answer = answer + int(list[item])
+    return answer 
 
 def subtract(num1, num2):
     """ Return subraction of second integer from first"""

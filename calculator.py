@@ -11,29 +11,30 @@ from arithmetic import *
 while True:
 	user_input = raw_input("Enter Math Function Here: ")
 	tokens = user_input.split(" ")
-	if tokens[0] == 'q':
+	(operator, num1, num2) = tokens[0], int(tokens[1]), int(tokens[2])
+	if operator == 'q':
 		break
-	elif tokens[0] == '+':
-		result = add(int(tokens[1]), int(tokens[2]))
+	elif operator == '+':
+		result = add(num1, num2)
 		print result
-	elif tokens[0] == '-':
-		result = subtract(int(tokens[1]), int(tokens[2]))
+	elif operator == '-':
+		result = subtract(num1, num2)
 		print result
-	elif tokens[0] == '*':
-		result = multiply(int(tokens[1]), int(tokens[2]))
+	elif operator == '*':
+		result = multiply(num1, num2)
 		print result
-	elif tokens[0] == '/':
-		result = divide(int(tokens[1]), int(tokens[2]))
+	elif operator == '/':
+		result = divide(num1, num2)
 		print result
-	elif tokens[0] == 'square':
-		result = square(int(tokens[1]))
+	elif operator == 'square':
+		result = square(num1)
 		print result
-	elif tokens[0] == 'cube':
-		result = cube(int(tokens[1]))
+	elif operator == 'cube':
+		result = cube(num1)
 		print result
-	elif tokens[0] == 'pow':
-		result = power(int(tokens[1]), int(tokens[2]))
+	elif operator == 'pow':
+		result = power(num1, num2)
 		print result
-	elif tokens[0] == 'mod':
-		result = mod(int(tokens[1]), int(tokens[2]))
+	elif operator == 'mod':
+		result = mod(num1, num2)
 		print result

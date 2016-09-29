@@ -5,13 +5,19 @@ def add(list):
         answer = answer + int(list[item])
     return answer 
 
-def subtract(num1, num2):
-    """ Return subraction of second integer from first"""
-    return num1 - num2
+def subtract(list):
+    """ Return subraction of multiple intergers"""
+    answer = 0
+    for item in range(len(list)):
+        answer = answer - int(list[item])
+    return answer 
 
-def multiply(num1, num2):
+def multiply(list):
     """ Return product of the inputs"""
-    return num1 * num2
+    answer = 1
+    for item in range(len(list)):
+        answer = answer * int(list[item])
+    return answer
 
 def divide(num1, num2):
     """ divides the first input by the second, returning a floating number"""

@@ -27,10 +27,10 @@ while True:
 		result = add(list_of_numbers)
 		print result
 	elif operator == '-':
-		result = subtract(num1, num2)
+		result = subtract(list_of_numbers)
 		print result
 	elif operator == '*':
-		result = multiply(num1, num2)
+		result = multiply(list_of_numbers)
 		print result
 	elif operator == '/':
 		result = divide(num1, num2)

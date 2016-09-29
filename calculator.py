@@ -11,7 +11,11 @@ from arithmetic import *
 while True:
 	user_input = raw_input("Enter Math Function Here: ")
 	tokens = user_input.split(" ")
-	(operator, num1, num2) = tokens[0], int(tokens[1]), int(tokens[2])
+	operator = tokens[0]
+	if operator=='square' or operator=='cube':
+		num1 = int(tokens[1])
+	else:
+		(num1, num2) = int(tokens[1]), int(tokens[2])
 	if operator == 'q':
 		break
 	elif operator == '+':
